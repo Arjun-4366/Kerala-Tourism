@@ -18,7 +18,7 @@ function ChatUI({ toggleChatBox }) {
             />
           </div>
           <div className="bg-white rounded-lg p-2 shadow mb-2 max-w-xs">
-            Hi, how can I help you?
+            Hai,I am Your chat assistant
           </div>
           <div className="flex items-center justify-end">
             <div className="bg-blue-500 text-white rounded-lg p-2 shadow mr-2 max-w-xs">
