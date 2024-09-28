@@ -1,14 +1,18 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 function Categories() {
+const navigate = useNavigate()
   const places = [
     {
       img: "./assets/Experience/hillstation.png",
       name: "Hill Stations",
+      path:'hillstations'
     },
     {
       img: "./assets/Experience/wildlife.jpg",
       name: "Wild Life",
+      path:'wildlife'
     },
     {
       img: "./assets/Experience/yoga.jpg",
@@ -39,6 +43,7 @@ function Categories() {
       name: "Beaches",
     },
   ];
+  const gotoRoute = (path)=>path
   return (
     <div className="mb-10">
       <div className="flex flex-col w-full items-center justify-center mt-7 px-10 ">
@@ -53,13 +58,13 @@ function Categories() {
           proposals and activity recommendations for your next Kerala visit!
         </p>
       </div>
-      <div className="w-full flex flex-wrap  justify-center mt-10 gap-3">
+      <div className="w-full flex flex-wrap  justify-center mt-10 gap-3" >
         {places.map((item, i) => (
           <a
             href=""
             className="flex justify-center text-center flex-col w-96 h-full relative cursor-pointer no-underline"
             key={i}>
-            <div className="px-1 py-2  rounded relative w-full  ">
+            <div className="px-1 py-2  rounded relative w-full  " onClick={()=>navigate(`/${gotoRoute(item.path)}`)}>
               <img
                 src={item.img}
                 alt=""
