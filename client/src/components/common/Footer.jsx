@@ -32,23 +32,23 @@ function Footer() {
             </div>
             <div>
                 <p className="text-black font-medium lg:mb-0 lg:mt-0 mt-6 uppercase">Support</p>
-                <p className="text-black mt-2 text-sm cursor-pointer hover:text-green-900 hover:underline">Contact</p>
+                <p className="text-black mt-2 text-sm cursor-pointer hover:text-green-900 hover:underline" onClick={()=>navigate('/planMyTrip')}>Contact</p>
                 <p className="text-black mt-2 text-sm cursor-pointer hover:text-green-900 hover:underline">Blog</p>
-                <p className="text-black mt-2 text-sm cursor-pointer hover:text-green-900 hover:underline">Help</p>
+                <p className="text-black mt-2 text-sm cursor-pointer hover:text-green-900 hover:underline"onClick={()=>navigate('/planMyTrip')}>Help</p>
             </div>
             <div>
                 <p className="text-black font-medium lg:mb-0 lg:mt-0 mt-6 uppercase">Travel Hub</p>
-                <p className="text-black mt-2 text-sm cursor-pointer hover:text-green-900 hover:underline">Kerala at a glance</p>
+                <p className="text-black mt-2 text-sm cursor-pointer hover:text-green-900 hover:underline" onClick={()=>navigate('/explore')}>Kerala at a glance</p>
                 <p className="text-black mt-2 text-sm cursor-pointer hover:text-green-900 hover:underline">Travel Care</p>
                 <p className="text-black mt-2 text-sm cursor-pointer hover:text-green-900 hover:underline">Where to Stay</p>
                 <p className="text-black mt-2 text-sm cursor-pointer hover:text-green-900 hover:underline">Travel Tips</p>
             </div>
             <div>
                 <p className="text-black font-medium lg:mb-0 lg:mt-0 mt-6 uppercase">Nature</p>
-                <p className="text-black mt-2 text-sm cursor-pointer hover:text-green-900 hover:underline">Hills</p>
+                <p className="text-black mt-2 text-sm cursor-pointer hover:text-green-900 hover:underline" onClick={()=>navigate('/hillstations')}>Hills</p>
                 <p className="text-black mt-2 text-sm cursor-pointer hover:text-green-900 hover:underline">Backwaters</p>
                 <p className="text-black mt-2 text-sm cursor-pointer hover:text-green-900 hover:underline">Beaches</p>
-                <p className="text-black mt-2 text-sm cursor-pointer hover:text-green-900 hover:underline">Wildlife</p>
+                <p className="text-black mt-2 text-sm cursor-pointer hover:text-green-900 hover:underline" onClick={()=>navigate('/wildlife')}>Wildlife</p>
                 <p className="text-black mt-2 text-sm cursor-pointer hover:text-green-900 hover:underline">Waterfalls</p>
             </div>
             <div>
