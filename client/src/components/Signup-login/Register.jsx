@@ -12,14 +12,10 @@ function Register({ toggleLoginForm }) {
     contact: "",
     password: "",
   });
-  const [image, setImage] = useState(null);
-  const [imagePreview, setImagePreview] = useState(null);
+ 
   const [message, setMessage] = useState();
   const navigate = useNavigate();
   
-  // const env = process.env.REACT_APP_BACKEND_BASED_URL
-
-  // console.log(env)
   const fileInputRef = React.createRef();
 
   const handleRegister = async () => {
@@ -29,9 +25,7 @@ function Register({ toggleLoginForm }) {
     formData.append("email", userData.email);
     formData.append("contact", userData.contact);
     formData.append("password", userData.password);
-    if (image) {
-      formData.append("image", image);
-    }
+ 
 
     try {
       const config = {
@@ -54,20 +48,7 @@ function Register({ toggleLoginForm }) {
     setUserData({ ...userData, [event.target.name]: event.target.value });
   };
 
-  const handleImageChange = (event) => {
-    const file = event.target.files[0];
-    setImage(file);
-
-    const reader = new FileReader();
-    reader.onloadend = () => {
-      setImagePreview(reader.result);
-    };
-    reader.readAsDataURL(file);
-  };
-
-  const triggerFileInput = () => {
-    fileInputRef.current.click();
-  };
+  
 
   return (
     <>
@@ -86,27 +67,7 @@ function Register({ toggleLoginForm }) {
             {message && (
               <p className="text-xl text-red-700 text-center">{message}</p>
             )}
-            <div
-              className="flex items-center justify-center cursor-pointer"
-              onClick={triggerFileInput}>
-              {imagePreview ? (
-                <img
-                  src={imagePreview}
-                  alt="Uploaded Preview"
-                  className="w-20 h-20 rounded-full object-cover"
-                />
-              ) : (
-                <FaRegUserCircle className="text-6xl text-green-900" />
-              )}
-            </div>
-
-            <input
-              type="file"
-              accept="image/*"
-              ref={fileInputRef}
-              style={{ display: "none" }}
-              onChange={handleImageChange}
-            />
+           
 
             <div className="mt-2">
               <label className="block text-black text-sm font-bold mb-1">
