@@ -9,7 +9,7 @@ function HowToPlan() {
 
 
   return (
-    <div className="p-8 bg-green-200 flex flex-col justify-center items-center">
+    <div className="p-8 bg-slate-100 flex flex-col justify-center items-center mb-6 shadow-md m-4">
       <h1 className="font-bold text-3xl mb-8">HOW IT WORKS</h1>
       <div className="flex flex-wrap justify-center items-start gap-8">
         <div className="flex flex-col justify-center items-center p-4 w-64 text-center ">
