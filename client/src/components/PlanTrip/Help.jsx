@@ -13,7 +13,7 @@ function Help() {
     <>
       {chatBox ? (
         <div className="w-full md:w-1/3 p-4">
-          <div className="flex flex-col justify-center items-center bg-gray-200 p-6 rounded-lg shadow-md mb-4 gap-2">
+          <div className="flex flex-col justify-center items-center bg-slate-100 p-6 rounded-lg shadow-md mb-4 gap-2">
             <p className="font-bold text-lg mb-2">ADDRESS</p>
             <p className="text-center">
               Kerala4u Holiday Planners
@@ -31,7 +31,7 @@ function Help() {
               </span>
             </div>
           </div>
-          <div className="flex flex-col justify-center items-center bg-gray-200 p-6 rounded-lg shadow-md gap-2">
+          <div className="flex flex-col justify-center items-center bg-slate-100 p-6 rounded-lg shadow-md gap-2">
             <MdOutlineSupportAgent className="text-gray-600 text-6xl" />
             <p className="text-center">
               BOOK BY{" "}
