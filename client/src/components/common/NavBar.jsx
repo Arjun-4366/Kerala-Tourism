@@ -32,7 +32,7 @@ useEffect(()=>{
 
 // const imageUrl = `http://localhost:3006/uploads/${userData.data.image}`;
   return (
-    <nav className={`fixed top-0 left-0 z-50 w-full ${color?'bg-gray-300': 'bg-black bg-opacity-70'}   border-transparent   transition-all duration-500`}>
+    <nav className={`fixed top-0 left-0 z-50 w-full ${color?'bg-slate-100': 'bg-black bg-opacity-70'}   border-transparent   transition-all duration-500 shadow-lg`}>
       <div className="container mx-auto flex flex-wrap items-center justify-between transition-all duration-700  px-6 border-none">
         <div className="w-full sticky flex justify-between lg:w-auto lg:justify-between lg:static h-[5vh] items-center">
           <a href="" onClick={() => navigate("/")}>
@@ -59,7 +59,7 @@ useEffect(()=>{
                 {/* <li className="hover:text-green-700 hover:text-lg hover:transition-all duration-500 py-2 leading-snug" onClick={()=>navigate('guide')}>Travel Guide</li> */}
                 <li className="py-2 flex text-white font-medium items-center leading-snug">
                   {!userData ? (
-                    <button className="bg-[#4f61ae] rounded-full px-4 py-1 flex items-center hover:text-green-400 transition-all duration-500 hover:bg-[#8383cd]" onClick={()=>navigate('login')}>
+                    <button className="bg-green-600 rounded-full px-4 py-1 flex items-center hover:text-green-400 transition-all duration-500 hover:bg-green-700" onClick={()=>navigate('login')}>
                       SignIn
                     </button>
                   ):(
