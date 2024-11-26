@@ -8,7 +8,7 @@ function Footer() {
   const navigate = useNavigate();
   return (
     <footer>
-      <section className="flex flex-col bg-[#b5b5b7] pt-7">
+      <section className="flex flex-col bg-slate-100 pt-7">
         <div className="lg:flex  justify-between pb-8 px-8">
           <div className="lg:flex justify-between m-auto lg:w-full lg:px-0 px-3">
             <div className="">
