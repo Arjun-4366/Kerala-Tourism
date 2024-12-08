@@ -32,7 +32,7 @@ useEffect(()=>{
 
 // const imageUrl = `http://localhost:3006/uploads/${userData.data.image}`;
   return (
-    <nav className={`fixed top-0 left-0 z-50 w-full ${color?'bg-slate-100': 'bg-black bg-opacity-70'}   border-transparent   transition-all duration-500 shadow-lg`}>
+    <nav className={`fixed top-0 left-0 z-50 w-full ${color?'bg-slate-100': 'bg-black bg-opacity-70'}   border-transparent   transition-all duration-500 shadow-md`}>
       <div className="container mx-auto flex flex-wrap items-center justify-between transition-all duration-700  px-6 border-none">
         <div className="w-full sticky flex justify-between lg:w-auto lg:justify-between lg:static h-[5vh] items-center">
           <a href="" onClick={() => navigate("/")}>
@@ -51,7 +51,7 @@ useEffect(()=>{
         
         </div>
         <div className={`lg:flex flex-grow items-center lg:h-auto  justify-center transition-all duration-500${navOpen ? "flex" : ' hidden '}`}>
-            <ul className={`flex flex-col lg:flex-row items-center gap-x-6 list-none lg:ml-auto lg:transform-none lg:gap-y-0 gap-y-8  mt-5 mb-4 font-sans  font-bold cursor-pointer ${color?'text-black text-xl': 'text-white text-xl'}`}>
+            <ul className={`flex flex-col lg:flex-row items-center gap-x-6 list-none lg:ml-auto lg:transform-none lg:gap-y-0 gap-y-8  mt-5 mb-4 font-sans  font-semibold cursor-pointer ${color?'text-black text-xl': 'text-white text-xl'}`}>
                 <li className={`hover:text-green-700  ${isActive('/explore')?'text-green-700':""}`} onClick={()=>navigate('explore')}>Experience Kerala</li>
                 <li className={`hover:text-green-700  ${isActive('/planMyTrip')?'text-green-700':""}`} onClick={()=>navigate('planMyTrip')}>Plan Your Trip</li>
                 <li className={`hover:text-green-700  ${isActive('/thingsTodo')?'text-green-700':""}`} onClick={()=>navigate('thingsTodo')}>Things To Do</li>
@@ -76,6 +76,7 @@ useEffect(()=>{
             </ul>
           </div>
       </div>
+      
     </nav>
   );
 }
