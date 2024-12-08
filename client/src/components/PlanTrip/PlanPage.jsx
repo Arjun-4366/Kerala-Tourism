@@ -7,11 +7,11 @@ function PlanPage() {
     <div className="mt-40 w-full">
       
       <div className="flex flex-col w-full items-center justify-center mt-7 px-10">
-        <h1 className="font-sans font-medium text-3xl">PLAN MY KERALA TRIP</h1>
+        <h1 className="font-sans font-medium text-3xl ">PLAN MY KERALA TRIP</h1>
         <h5 className="font-sans font-medium mt-2">
           Get the Best Holiday Planned by Experts!
         </h5>
-        <p className="p-3 bg-slate-100 mt-3">
+        <p className="p-3 text-xs bg-slate-100 mt-3 sm:text-sm md:text-base lg:text-lg">
           Explore the list of the best tourist destinations in Kerala. Discover
           the best in Backwaters, Tea Plantations, Wildlife Sanctuaries,
           Waterfalls, Ayurveda - Yoga Centers, Cultural - Historical places in
