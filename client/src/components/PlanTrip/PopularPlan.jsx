@@ -24,14 +24,12 @@ function PopularPlan() {
           </div>
         </nav>
       </div>
-        <div className="flex flex-wrap gap-6 items-center justify-center">
-        <PopularPlanLists/>
-  <PopularPlanLists/>
-  <PopularPlanLists/>
-  <PopularPlanLists/>
-        
-        </div>
-
+      <div className="flex flex-wrap gap-6 items-center justify-center">
+        <PopularPlanLists />
+        <PopularPlanLists />
+        <PopularPlanLists />
+        <PopularPlanLists />
+      </div>
     </div>
   );
 }
